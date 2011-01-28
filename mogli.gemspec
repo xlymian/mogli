@@ -9,6 +9,8 @@ spec = Gem::Specification.new do |s|
   s.author = "Mike Mangino"
   s.email = "mmangino@elevatedrails.com"
   s.homepage = "http://developers.facebook.com/docs/api"
-  s.add_dependency('hashie', ">=0.2.0")
+  # s.add_dependency('hashie', ">=0.2.0")
+  # Forcing dependency on hashie 0.4.0 to fix NoMethodError
+  s.add_dependency('hashie', "=0.4.0")
   s.add_dependency('httparty', ">=0.4.3")
 end
